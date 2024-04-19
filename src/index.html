@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Alexandr Romanenkov" />
+    <meta
+      name="description"
+      content="Test landing page called Baneservice for Studio Presto"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      href="/public/assets/images/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/public/assets/images/favicon-72x72.png"
+      type="image/png"
+      sizes="72x72"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/public/assets/images/favicon-120x120.png"
+      type="image/png"
+      sizes="120x120"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/public/assets/images/favicon-152x152.png"
+      type="image/png"
+      sizes="152x152"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/public/assets/images/favicon-167x167.png"
+      type="image/png"
+      sizes="167x167"
+    />
+    <noscript id="inline-deps"
+      >Javascript is not supported or disable in your browser. Enable it if you
+      want to use it properly.
+    </noscript>
+    <title>Baneservice</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="menu">
+          <div class="logo">
+            <a class="logo__link" href="/">
+              <picture class="logo__picture">
+                <source
+                  srcset="/public/assets/images/logo.svg"
+                  media="(max-width: 832px)"
+                />
+                <img
+                  class="logo__link-img"
+                  src="/public/assets/images/logo192.svg"
+                  alt="logo"
+                  loading="lazy"
+                  fetchpriority="high"
+                />
+              </picture>
+            </a>
+          </div>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#vacancies">Stilling</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#about">Om oss</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Benefits</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Testimonial</a>
+            </li>
+          </ul>
+
+          <div class="menu__button">
+            <button class="button button_header button_m">Fyll hjelmen</button>
+          </div>
+          <div class="menu__burger">
+            <button class="burger-btn" aria-label="burger-btn">
+              <div class="burger-btn__item"></div>
+              <div class="burger-btn__item"></div>
+              <div class="burger-btn__item"></div>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <section class="head">
+        <header class="head__content">
+          <div class="head__start">
+            <h1 class="head__title">
+              <strong class="head__italic">Fyll hjelmen</strong>
+              <span class="head__main-text">med dine</span>
+              <span class="head__main-text">ferdigheter!</span>
+            </h1>
+          </div>
+          <div class="head__end">
+            <p class="head__p">
+              Hos oss i Baneservice finnes det mange muligheter, både for deg
+              som akkurat er ferdig med utdannelsen, og for deg med lang
+              erfaring.
+            </p>
+            <div class="head__button">
+              <button class="button button_primary button_m">
+                Fyll hjelmen
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="video">
+          <button class="video__button-play">
+            <img
+              src="/public/assets/images/triangle.svg"
+              width="21px"
+              height="29px"
+              alt="triangle"
+            />
+          </button>
+          <video
+            class="video__player"
+            poster="/dist/assets/images/Player-1440.webp"
+            width="100%"
+            height="auto"
+          >
+            <source src="/public/assets/videos/player.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+      <section class="vacancies">
+        <div class="container">
+          <header class="vacancies__header">
+            <div class="vacancies__header-top">
+              <h3 class="vacancies__title">
+                <span class="vacancies__main-text hidden">Våre</span>
+                <strong class="vacancies__strong hidden">medarbeidere</strong>
+                <span class="vacancies__main-text hidden"
+                  >er mer enn bare dyktig</span
+                >
+                <strong class="vacancies__strong hidden">fagfolk.</strong>
+              </h3>
+              <div id="vacancies" class="vacancies__anchor hidden">
+                <div class="anchor anchor_secondary-color">Vacancies</div>
+              </div>
+            </div>
+            <div class="vacancies__header-bottom">
+              <p class="vacancies__p">
+                For at vi skal bygge fremtidens jernbane trenger vi våre
+                medarbeidere sine ferdigheter og egenskaper, derfor er vi
+                lidenskapelig opptatt av hva som befinner seg under din hjelm.
+                om du liker fotball eller klatring, om du er kreativ eller
+                løsningsorientert, er dette ting vi verdsetter.
+              </p>
+            </div>
+          </header>
+
+          <section class="cards">
+            <article class="card observed">
+              <div class="card__content">
+                <div class="card__first">
+                  <h4 class="card__title">Prosjektleder</h4>
+                  <div class="card__tag">Fagarbeider</div>
+                </div>
+                <div class="card__seconds">
+                  <button class="button-apply">
+                    <span class="button-apply__text">Fyll hjelmen</span>
+                    <span class="button-apply__circle"></span>
+                  </button>
+                </div>
+              </div>
+              <picture class="card__picture">
+                <source
+                  media="(max-width: 576px)"
+                  srcset="/dist/assets/images/skilled_worker_m.webp"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="/dist/assets/images/skilled_worker.webp"
+                  type="image/webp"
+                />
+
+                <img
+                  src="/public/assets/images/skilled_worker.png"
+                  alt="Skilled worker"
+                  class="card__image"
+                  loading="lazy"
+                  fetchpriority="high"
+                />
+              </picture>
+            </article>
+            <article class="card observed">
+              <div class="card__content">
+                <div class="card__first">
+                  <h4 class="card__title">Energimontør</h4>
+                  <div class="card__tag">Energimontør</div>
+                </div>
+                <div class="card__seconds">
+                  <button class="button-apply">
+                    <span class="button-apply__text">Fyll hjelmen</span>
+                    <span class="button-apply__circle"></span>
+                  </button>
+                </div>
+              </div>
+              <picture class="card__picture">
+                <source
+                  media="(max-width: 576px)"
+                  srcset="/dist/assets/images/Power_line_technician_m.webp"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="/dist/assets/images/Power_line_technician.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="/public/assets/images/Power_line_technician.png"
+                  alt="Powerline Technician"
+                  class="card__image"
+                  loading="lazy"
+                  fetchpriority="high"
+                />
+              </picture>
+            </article>
+            <article class="card observed">
+              <div class="card__content">
+                <div class="card__first">
+                  <h4 class="card__title">Banemontør</h4>
+                  <div class="card__tag">Banemontør</div>
+                </div>
+                <div class="card__second">
+                  <button class="button-apply">
+                    <span class="button-apply__text">Fyll hjelmen</span>
+                    <span class="button-apply__circle"></span>
+                  </button>
+                </div>
+              </div>
+              <picture class="card__picture">
+                <source
+                  media="(max-width: 576px)"
+                  srcset="/dist/assets/images/Railway_track_worker_m.webp"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="/dist/assets/images/Railway_track_worker.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="/public/assets/images/Railway_track_worker.png"
+                  alt="Railway track worker"
+                  class="card__image"
+                  loading="lazy"
+                  fetchpriority="high"
+                />
+              </picture>
+            </article>
+            <article class="card observed">
+              <div class="card__content">
+                <div class="card__first">
+                  <h4 class="card__title">Signalmontør</h4>
+                  <div class="card__tag">Signalmontør</div>
+                </div>
+                <div class="card__seconds">
+                  <button class="button-apply">
+                    <span class="button-apply__text">Fyll hjelmen</span>
+                    <span class="button-apply__circle"></span>
+                  </button>
+                </div>
+              </div>
+              <picture class="card__picture">
+                <source
+                  media="(max-width: 576px)"
+                  srcset="/dist/assets/images/Signal_techician_m.webp"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="/dist/assets/images/Signal_techician.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="/public/assets/images/Signal_techician.png"
+                  alt="Signal Technician"
+                  class="card__image"
+                  loading="lazy"
+                  fetchpriority="high"
+                />
+              </picture>
+            </article>
+            <article class="card observed">
+              <div class="card__content">
+                <div class="card__first">
+                  <h4 class="card__title">Lokmotivfører</h4>
+                  <div class="card__tag">Fører</div>
+                </div>
+                <div class="card__seconds">
+                  <button class="button-apply">
+                    <span class="button-apply__text">Fyll hjelmen</span>
+                    <span class="button-apply__circle"></span>
+                  </button>
+                </div>
+              </div>
+              <picture class="card__picture">
+                <source
+                  media="(max-width: 576px)"
+                  srcset="/dist/assets/images/Train_driver_m.webp"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="/dist/assets/images/Train_driver.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="/public/assets/images/Train_driver.png"
+                  alt="Train Driver"
+                  class="card__image"
+                  loading="lazy"
+                  fetchpriority="high"
+                />
+              </picture>
+            </article>
+            <article class="card-apply observed">
+              <div class="card-apply__content">
+                <div class="card-apply__top">
+                  <img
+                    src="/public/assets/images/logo_green.svg"
+                    alt="Green logo"
+                    class="card-apply__logo"
+                  />
+                  <hgroup class="card-apply__text">
+                    <h5 class="card-apply__title">åpen søknad</h5>
+                    <p class="card-apply__p">
+                      Send oss gjerne en åpen søknad om det er andre hjelmer du
+                      ønsker å fylle.
+                    </p>
+                  </hgroup>
+                </div>
+                <div class="card-apply__bottom">
+                  <button class="card-apply__button button button_secondary">
+                    Fyll hjelmen
+                  </button>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+    </div>
+    <div class="blinds">
+      <div class="blinds__item-1"></div>
+      <div class="blinds__item-2"></div>
+      <div class="blinds__item-3"></div>
+      <div class="blinds__item-4"></div>
+      <div class="blinds__item-5"></div>
+    </div>
+    <section class="about observed">
+      <div class="container">
+        <div class="about__content">
+          <div class="about__first">
+            <div
+              id="about"
+              class="about__anchor anchor anchor_primary-color hidden"
+            >
+              Om oss
+            </div>
+          </div>
+          <div class="about__second">
+            <h2 class="about__title">
+              Lorem ipsum dolor sit
+              <strong class="about__strong observed">amet</strong>
+              <strong class="about__strong observed">consectetur</strong>
+            </h2>
+            <div class="about__text">
+              <p class="about__p-first observed">
+                Lorem ipsum dolor sit amet consectetur. Tortor a turpis at
+                pharetra. Id nunc commodo morbi sapien diam enim. Lorem ipsum
+                dolor sit amet consectetur.
+              </p>
+              <p class="about__p-second observed">
+                Facilisis nunc est enim diam nibh tellus nisl enim. Sed ultrices
+                et morbi at. Odio quam vulputate tortor tellus. Scelerisque
+                ullamcorper diam aliquam lorem.
+              </p>
+            </div>
+            <div class="about__button observed">
+              <button class="button button_primary button_m">
+                Fyll hjelmen
+              </button>
+            </div>
+            <ul class="about-metrics">
+              <li class="about-metrics__item">
+                <hgroup class="about-metrics__text">
+                  <h1 class="about-metrics__title observed">400+</h1>
+                  <p class="about-metrics__p observed">
+                    Lorem ipsum dolor sit amet consectetur. Facilisis nunc est
+                    enim diam nibh tellus nisl enim.
+                  </p>
+                </hgroup>
+              </li>
+              <li class="about-metrics__item">
+                <hgroup class="about-metrics__text">
+                  <h1 class="about-metrics__title observed">600%</h1>
+                  <p class="about-metrics__p observed">
+                    Lorem ipsum dolor sit amet consectetur. Facilisis nunc est
+                    enim diam nibh tellus nisl enim.
+                  </p>
+                </hgroup>
+              </li>
+              <li class="about-metrics__item">
+                <hgroup class="about-metrics__text">
+                  <h1 class="about-metrics__title observed">10k</h1>
+                  <p class="about-metrics__p observed">
+                    Lorem ipsum dolor sit amet consectetur. Facilisis nunc est
+                    enim diam nibh tellus nisl enim.
+                  </p>
+                </hgroup>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer observed">
+      <div class="container">
+        <div class="footer__content">
+          <h2 class="footer__title">
+            Cras nibh sollicitudin elit
+            <strong class="footer__strong observed"
+              >varius facilisi arcu feugiat amet in</strong
+            >
+          </h2>
+          <div class="footer__buttons observed">
+            <button class="button button_primary">Fyll hjelmen</button>
+            <button class="button button_secondary">
+              support@baneservice.cm
+            </button>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-contacts observed">
+            <li class="footer-contacts__item">
+              <a
+                href="mailto:test@gmail.com"
+                target="_blank"
+                class="footer-contacts__link"
+                >post@baneservice.no</a
+              >
+            </li>
+            <li class="footer-contacts__item">
+              <a
+                href="tel:+47 916 56 700"
+                target="_blank"
+                class="footer-contacts__link"
+                >+47 916 56 700</a
+              >
+            </li>
+            <li class="footer-contacts__item">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="footer-contacts__link"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="footer-contacts__item">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer-contacts__link"
+                >Facebook</a
+              >
+            </li>
+            <li class="footer-contacts__item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-contacts__link"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-info observed">
+            <li class="footer-info__item">
+              © 2023 Baneservice. All rights reserved.
+            </li>
+            <li class="footer-info__item">Personuppgiftspolicy & Kakor</li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

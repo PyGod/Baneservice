@@ -1,0 +1,61 @@
+// Colors
+$primary-colors: (
+  green: #5cb047,
+  darkgreen: #1f4a21,
+  lightgreen: #bad862,
+  sand: #eae5da,
+  svart: #0b1f2e,
+  mossgreen: #96be6e,
+  mediumblue: #4c687b,
+  darkblue: #3d4a57,
+  green200: #d2dbd3,
+  green700: #70886b,
+);
+
+$black: #0b1f2e;
+$gray-colors: (
+  gray800: #8c8c8c,
+  gray700: #d1d1d1,
+  gray600: #dddddd,
+  gray500: #e8e8e8,
+  gray400: #f3f3f3,
+  gray300: #f9f9f9,
+);
+
+$system-colors: (
+  success: #21d184,
+  error: #ff5c5c,
+  link: #3870ff,
+);
+
+$desktop-heading-props: 96px 100% 400, 72px 110% 600, 56px 110% 400,
+  40px 113% 500, 32px 110% 500;
+
+$tablet-heading-props: 72px 110% 500, 56px 110% 600, 40px 110% 400,
+  32px 130% 500, 28px 110% 500;
+
+$mobile-heading-props: 48px 100% 600, 40px 110% 600, 32px 110% 400,
+  24px 130% 500, 20px 110% 500;
+
+$body-desktop: (
+  s: 14px 150%,
+  m: 16px 150%,
+  l: 18px 130%,
+  xl: 20px 139%,
+);
+
+$body-mobile: (
+  s: 12px 150%,
+  m: 14px 150%,
+  l: 16px 130%,
+  xl: 18px 139%,
+);
+
+$button-desktop: (
+  s: 14px 120%,
+  m: 16px 140%,
+);
+
+$button-mobile: (
+  s: 12px 130%,
+);

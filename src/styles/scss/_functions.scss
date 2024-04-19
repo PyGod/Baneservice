@@ -1,0 +1,15 @@
+@use 'sass:map';
+
+@function create-list($list, $selector) {
+  $new-list: ();
+  @if $selector == 'heading' {
+    @for $i from 1 to 6 {
+      $new-list: (map.set($new-list, 'h#{$i}', nth($list, $i)));
+    }
+
+    @return $new-list;
+  } @else {
+    $new-list: (map.set($new-list, $selector, $list));
+    @return $new-list;
+  }
+}

@@ -1,0 +1,26 @@
+@mixin typography($props) {
+  @each $key, $value in $props {
+    #{$key} {
+      @if length($value) > 2 {
+        font: {
+          size: nth($list: $value, $n: 1);
+          weight: nth($list: $value, $n: 3);
+        }
+        line-height: nth($list: $value, $n: 2);
+      } @else {
+        font-size: nth($list: $value, $n: 1);
+        line-height: nth($list: $value, $n: 2);
+      }
+    }
+  }
+}
+
+@mixin animationDelay($propname, $hold, $start, $end, $gap) {
+  $delay: $hold;
+  @for $i from $start through $end {
+    $delay: $delay + $gap;
+    &:nth-child(#{$i}) {
+      #{$propname}: #{$delay}ms;
+    }
+  }
+}
