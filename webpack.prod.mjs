@@ -46,6 +46,17 @@ const prodConfig = {
     type: 'filesystem',
     allowCollectingMemory: true,
   },
+  devServer: {
+    webSocketServer: false,
+    historyApiFallback: true,
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    open: true,
+    port: 8080,
+    hot: true,
+    watchFiles: ['./public/**/*', './src/**/*', './dist/**/*'],
+  },
   module: {
     rules: [
       {
@@ -222,6 +233,9 @@ const prodConfig = {
       extract: true,
       width: 375,
       height: 565,
+      penthouse: {
+        blockJSRequests: false,
+      },
     }),
     new TerserPlugin({
       test: /\.js(\?.*)?$/i,
